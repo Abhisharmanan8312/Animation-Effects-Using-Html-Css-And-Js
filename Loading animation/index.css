@@ -1,0 +1,161 @@
+html,
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.bar-1,
+.bar-2,
+.bar-3,
+.bar-4,
+.bar-5,
+.bar-6,
+.bar-7 {
+    width: 8px;
+    height: 0;
+    border-radius: 4px;
+    margin-right: 8px;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.bar-1 {
+    background: linear-gradient(0deg, #006a6a 0%, #006edd 40%);
+    animation-name: animation-bar-1;
+}
+
+.bar-2 {
+    background: linear-gradient(0deg, #006a6a 5%, #006edd 50%);
+    animation-name: animation-bar-2;
+}
+
+.bar-3 {
+    background: linear-gradient(0deg, #006a6a 10%, #006edd 60%);
+    animation-name: animation-bar-3;
+}
+
+.bar-4 {
+    background: linear-gradient(0deg, #006a6a 15%, #006edd 70%);
+    animation-name: animation-bar-4;
+}
+
+.bar-5 {
+    background: linear-gradient(0deg, #006a6a 20%, #006edd 80%);
+    animation-name: animation-bar-5;
+}
+
+.bar-6 {
+    background: linear-gradient(0deg, #006a6a 25%, #006edd 90%);
+    animation-name: animation-bar-6;
+}
+
+.bar-7 {
+    background: linear-gradient(0deg, #006a6a 30%, #006edd 100%);
+    animation-name: animation-bar-7;
+}
+
+@keyframes animation-bar-1 {
+    0% {
+        height: 0px;
+    }
+
+    20% {
+        height: 75px;
+    }
+
+    40% {
+        height: 0px;
+    }
+}
+
+@keyframes animation-bar-2 {
+    10% {
+        height: 0px;
+    }
+
+    30% {
+        height: 75px;
+    }
+
+    50% {
+        height: 0px;
+    }
+}
+
+@keyframes animation-bar-3 {
+    20% {
+        height: 0px;
+    }
+
+    40% {
+        height: 75px;
+    }
+
+    60% {
+        height: 0px;
+    }
+}
+
+@keyframes animation-bar-4 {
+    30% {
+        height: 0px;
+    }
+
+    50% {
+        height: 75px;
+    }
+
+    70% {
+        height: 0px;
+    }
+}
+
+@keyframes animation-bar-5 {
+    40% {
+        height: 0px;
+    }
+
+    60% {
+        height: 75px;
+    }
+
+    80% {
+        height: 0px;
+    }
+}
+
+@keyframes animation-bar-6 {
+    50% {
+        height: 0px;
+    }
+
+    70% {
+        height: 75px;
+    }
+
+    90% {
+        height: 0px;
+    }
+}
+
+@keyframes animation-bar-7 {
+    60% {
+        height: 0px;
+    }
+
+    80% {
+        height: 75px;
+    }
+
+    100% {
+        height: 0px;
+    }
+}
