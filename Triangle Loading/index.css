@@ -1,0 +1,23 @@
+body {
+    background-color: black;
+}
+
+.center-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.loader-triangle polygon {
+    stroke: white;
+    stroke-dasharray: 17;
+    animation: myloader 2.5s cubic-bezier(0.35, 0.04, 0.63, 0.95) infinite;
+}
+
+@keyframes myloader {
+    to {
+        stroke-dashoffset: -136;
+    }
+}
