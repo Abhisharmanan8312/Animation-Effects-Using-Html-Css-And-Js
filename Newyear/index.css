@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+    overflow: hidden;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#start-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    color: black;
+    background-color: rgb(166, 188, 255);
+    transition: background-color 0.1s ease;
+    cursor: pointer;
+    opacity: 1;
+}
+
+#start-button:hover {
+    background-color: green;
+}
+
+#greeting-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    opacity: 0;
+    z-index: 100;
+}
+
+#greeting {
+    color: rgb(58, 202, 58);
+    text-align: center;
+    font-size: clamp(3rem, 7vw, 6rem);
+    white-space: nowrap;
+    -webkit-background-clip: text;
+}
+
+#greeting-container p {
+    color: blueviolet;
+    text-align: center;
+    font-size: larger;
+    opacity: 0;
+}
