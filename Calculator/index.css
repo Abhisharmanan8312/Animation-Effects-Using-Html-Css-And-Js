@@ -1,0 +1,77 @@
+*{
+    font-family: sans-serif;
+}
+body{
+    background-color: black;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: rgba(28, 26, 26, 0.89);
+    max-width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 35px;
+    border-radius: 10px;
+    user-select: none;
+}
+#Display-area{
+    width: 100%;
+    margin: 3vh 0;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2,minmax(40px,auto));
+    word-wrap: break-word;
+    padding-bottom: 20px;
+}
+#Display-area .currentInput{
+    text-align: right;
+    height: 8vh;
+    color: white;
+    font-size: xx-large;
+    line-height: 2;
+    word-wrap: break-word;
+}
+#Display-area .answerScreen{
+    text-align: right;
+    color: rgb(138, 126, 126);
+    height: 7px;
+    line-height: 3;
+    font-size: larger;
+}
+.keypad-btns{
+    display: grid;
+    grid: repeat(5,70px)/repeat(4,70px);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+}
+.keypad-btns button{
+    outline: none;
+    border: none;
+    border-radius: 122px;
+    background-color: #444447;
+    color: white;
+    font-size: x-large;
+}
+.keypad-btns .fun_btn{
+    color: black;
+    background: #53ced6;
+    font-weight: bold;
+}
+.num_btn:hover{
+    background-color: #636365;
+}
+.fun_btn:hover{
+    background-color: #03eeff;
+}
+@media only screen and (max-width:600px) {
+    body{
+        background-color: black;
+        align-items: flex-start;
+    }
+}
